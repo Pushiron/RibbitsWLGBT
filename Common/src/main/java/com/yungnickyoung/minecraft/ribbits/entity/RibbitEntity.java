@@ -629,19 +629,19 @@ public class RibbitEntity extends AgeableMob implements GeoEntity, Merchant {
         return true;
     }
 
-    public boolean isPrideRibbit() {
-        Random rand = new Random(this.getUUID().getLeastSignificantBits());
+    //public boolean isPrideRibbit() {
+    //    Random rand = new Random(this.getUUID().getLeastSignificantBits());
 
-        return isPrideMonth() && this.getRibbitData().getProfession().equals(RibbitProfessionModule.NITWIT) && rand.nextFloat() < 0.33f;
-    }
+    //    return isPrideMonth() && this.getRibbitData().getProfession().equals(RibbitProfessionModule.NITWIT) && rand.nextFloat() < 0.33f;
+    //}
 
-    private static boolean isPrideMonth() {
-        if (RibbitsCommon.CONFIG.prideFlagAllYear) return true;
+    //private static boolean isPrideMonth() {
+    //    if (RibbitsCommon.CONFIG.prideFlagAllYear) return true;
 
-        LocalDate date = LocalDate.now();
-        int month = date.get(ChronoField.MONTH_OF_YEAR);
-        return month == 6;
-    }
+    //    LocalDate date = LocalDate.now();
+    //    int month = date.get(ChronoField.MONTH_OF_YEAR);
+    //    return month == 6;
+    //}
 
     public boolean isInRain() {
         BlockPos pos = this.blockPosition();
@@ -670,8 +670,8 @@ public class RibbitEntity extends AgeableMob implements GeoEntity, Merchant {
     private RawAnimation getWalkAnimation() {
         if (this.getRibbitData().getProfession().equals(RibbitProfessionModule.FISHERMAN)) {
             return this.isInRain() ? WALK_HOLDING_FISHERMAN : WALK_HOLDING_2;
-        } else if (this.isPrideRibbit()) {
-            return WALK_HOLDING_2;
+        //} else if (this.isPrideRibbit()) {
+        //    return WALK_HOLDING_2;
         } else if (this.getRibbitData().getProfession().equals(RibbitProfessionModule.SORCERER) || this.getRibbitData().getProfession().equals(RibbitProfessionModule.GARDENER)) {
             return this.isInRain() ? WALK_HOLDING_HAT : WALK;
         } else {
@@ -682,8 +682,8 @@ public class RibbitEntity extends AgeableMob implements GeoEntity, Merchant {
     private RawAnimation getIdleAnimation() {
         if (this.getRibbitData().getProfession().equals(RibbitProfessionModule.FISHERMAN)) {
             return this.isInRain() ? IDLE_HOLDING_FISHERMAN : IDLE_HOLDING_2;
-        } else if (this.isPrideRibbit()) {
-            return IDLE_HOLDING_2;
+        //} else if (this.isPrideRibbit()) {
+        //    return IDLE_HOLDING_2;
         } else if (this.getRibbitData().getProfession().equals(RibbitProfessionModule.SORCERER) || this.getRibbitData().getProfession().equals(RibbitProfessionModule.GARDENER)) {
             return this.isInRain() ? IDLE_HOLDING_HAT : IDLE;
         } else {
