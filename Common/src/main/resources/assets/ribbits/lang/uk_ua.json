@@ -29,6 +29,7 @@
   "subtitles.entity.ribbit.death": "Жабенятко помирає",
   "subtitles.entity.ribbit.hurt": "Жабенятко поранено",
   "subtitles.entity.ribbit.step": "Жабенятко ходить",
+  "subtitles.entity.ribbit.magic": "Sorcerer Ribbit casts a spell",
   "subtitles.music.ribbit.bass": "Жабенятко грає на бас-гітарі",
   "subtitles.music.ribbit.bongo": "Жабенятко грає на бонго",
   "subtitles.music.ribbit.flute": "Жабенятко грає на флейті",
@@ -36,6 +37,6 @@
   "subtitles.music.ribbit.maraca": "Гравець грає на маракасах",
 
   "text.autoconfig.ribbits-fabric-1_20_1.title": "Жабенятка",
-  "text.autoconfig.ribbits-fabric-1_20_1.option.general.prideFlagAllYear": "Показувати прапори гордості цілий рік",
-  "text.autoconfig.ribbits-fabric-1_20_1.option.general.prideFlagAllYear.@Tooltip": "Якщо увімкнено, жабенятка з прапорами гордості існуватимуть цілий рік, а не тільки в червні"
+
+  "ribbits.options.supporter_hat_button": "Ribbits Supporter Hat"
 }

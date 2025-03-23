@@ -21,6 +21,6 @@ public class ConfigModuleFabric {
     }
 
     private static void bakeConfig(RibbitsConfigFabric configFabric) {
-        RibbitsCommon.CONFIG.prideFlagAllYear = configFabric.general.prideFlagAllYear;
+//        RibbitsCommon.CONFIG.prideFlagAllYear = configFabric.general.prideFlagAllYear;
     }
 }

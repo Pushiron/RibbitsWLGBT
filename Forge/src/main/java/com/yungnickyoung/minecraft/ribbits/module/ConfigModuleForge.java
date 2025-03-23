@@ -27,6 +27,6 @@ public class ConfigModuleForge {
     }
 
     private static void bakeConfig() {
-        RibbitsCommon.CONFIG.prideFlagAllYear = RibbitsConfigForge.general.prideFlagAllYear.get();
+//        RibbitsCommon.CONFIG.prideFlagAllYear = RibbitsConfigForge.general.prideFlagAllYear.get();
     }
 }
